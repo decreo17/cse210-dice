@@ -45,7 +45,7 @@ class Director:
         Args:
             self (Director): An instance of Director.
         """
-        roll_dice = input("Roll dice? [y/n] ")
+        roll_dice = input("Roll dice? [y/n]: ")
         self.is_playing = (roll_dice == "y")
        
     def do_updates(self):
@@ -77,7 +77,7 @@ class Director:
         for i in range(len(self.dice)):
             die = self.dice[i]
             values += f"{die.value} "
-
+        
         # check if there were no 1 or 5
         for i in range(len(self.dice)):
             die = self.dice[i]
